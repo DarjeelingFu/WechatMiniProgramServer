@@ -5,7 +5,7 @@
 
 服务器端口：8080
 
-h2数据库控制台地址：localhost:8081/h2-console（登录无密码）
+h2数据库控制台地址：localhost:8080/h2-console（登录无密码）
 
 
 

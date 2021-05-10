@@ -1,8 +1,15 @@
 <div style="background-color: #fff2a7; border-radius: 15px; padding: 10px 20px">
     <p style="color: #a86026;"><b>注意&nbsp</b>仅完成了GET相关的接口，暂时用于开发测试</p>
 </div>
+# 服务器配置
 
-# 响应格式
+服务器端口：8080
+
+h2数据库控制台地址：localhost:8081/h2-console（登录无密码）
+
+
+
+响应格式：
 
 `json`格式，包含属性：`code`，`msg`，`data`
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Server Test</title>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/vue-resource.min.js"></script>
+	</head>
+	<body>
+		<div id="demo" v-if="content">
+			<li v-for="rec in content">{{rec.stu_id}} {{rec.nick_name}}</li>
+		</div>
+		<script type="text/javascript">
+			let vue = new Vue({
+				el: "#demo",
+				data: {
+					content: ''
+				},
+				mounted: function(){
+					this.$http.get('/user/users').then(function(res){
+						this.$data.content = res.data;
+					})
+				}
+			})
+		</script>
+	</body>
+</html>
